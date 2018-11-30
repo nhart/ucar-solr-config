@@ -1,0 +1,199 @@
+<lookup id="collectionKey">
+    <row>
+        <collectionKey>staff</collectionKey>
+        <collectionName>Staff Notes</collectionName>
+    </row>
+    <row>
+        <collectionKey>info</collectionKey>
+        <collectionName>Information Releases</collectionName>
+    </row>
+    <row>
+        <collectionKey>wor</collectionKey>
+        <collectionName>Walter Roberts Papers</collectionName>
+    </row>
+    <row>
+        <collectionKey>hao</collectionKey>
+        <collectionName>High Altitude Observ. Records</collectionName>
+    </row>
+    <row>
+        <collectionKey>lie</collectionKey>
+        <collectionName>Line Islands Exp. Records</collectionName>
+    </row>
+    <row>
+        <collectionKey>nhre</collectionKey>
+        <collectionName>Nat’l Hail Research Exp. Records</collectionName>
+    </row>
+    <row>
+        <collectionKey>atd</collectionKey>
+        <collectionName>Atmos. Tech. Div. Records</collectionName>
+    </row>
+    <row>
+        <collectionKey>natlballoonfac</collectionKey>
+        <collectionName>Nat’l Balloon Fac. Records</collectionName>
+    </row>
+    <row>
+        <collectionKey>unpc</collectionKey>
+        <collectionName>NCAR Newsletters</collectionName>
+    </row>
+    <row>
+        <collectionKey>mesalab</collectionKey>
+        <collectionName>Mesa Lab History</collectionName>
+    </row>
+    <row>
+        <collectionKey>scdnewsletter</collectionKey>
+        <collectionName>Scientific Comp. Div. Records</collectionName>
+    </row>
+    <row>
+        <collectionKey>twerle</collectionKey>
+        <collectionName>TWERLE Records</collectionName>
+    </row>
+    <row>
+        <collectionKey>srm</collectionKey>
+        <collectionName>Solar Research Memos</collectionName>
+    </row>
+    <row>
+        <collectionKey>vinlally</collectionKey>
+        <collectionName>Vin Lally Papers</collectionName>
+    </row>
+    <row>
+        <collectionKey>ucar</collectionKey>
+        <collectionName>UCAR Records</collectionName>
+    </row>
+    <row>
+        <collectionKey>jkuettner</collectionKey>
+        <collectionName>Kuettner Papers</collectionName>
+    </row>
+    <row>
+        <collectionKey>gate</collectionKey>
+        <collectionName>GATE Records</collectionName>
+    </row>
+    <row>
+        <collectionKey>unid</collectionKey>
+        <collectionName>Unidata Records</collectionName>
+    </row>
+    <row>
+        <collectionKey>fgge</collectionKey>
+        <collectionName>FGGE Records</collectionName>
+    </row>
+    <row>
+        <collectionKey>nuoh</collectionKey>
+        <collectionName>NCAR/UCAR Oral History</collectionName>
+    </row>
+    <row>
+        <collectionKey>ams</collectionKey>
+        <collectionName>AMS Oral History</collectionName>
+    </row>
+    <row>
+        <collectionKey>soars</collectionKey>
+        <collectionName>SOARS Collection</collectionName>
+    </row>
+    <row>
+        <collectionKey>asr</collectionKey>
+        <collectionName>Annual Reports</collectionName>
+    </row>
+    <row>
+        <collectionKey>comm</collectionKey>
+        <collectionName>Communications</collectionName>
+    </row>
+    <row>
+        <collectionKey>ipcc</collectionKey>
+        <collectionName>IPCC Collection</collectionName>
+    </row>
+    <row>
+        <collectionKey>osgc</collectionKey>
+        <collectionName>OSGC</collectionName>
+    </row>
+    <row>
+        <collectionKey>wwashington</collectionKey>
+        <collectionName>W. Washington Papers</collectionName>
+    </row>
+    <row>
+        <collectionKey>cimg</collectionKey>
+        <collectionName>UCAR Image Gallery</collectionName>
+    </row>
+    <row>
+        <collectionKey>unoh</collectionKey>
+        <collectionName>NCAR/UCAR Oral History</collectionName>
+    </row>
+    <row>
+        <collectionKey>siparcs</collectionKey>
+        <collectionName>SIParCS Collection</collectionName>
+    </row>
+    <row>
+        <collectionKey>dcerc</collectionKey>
+        <collectionName>DCERC Collection</collectionName>
+    </row>
+    <row>
+        <collectionKey>technotes</collectionKey>
+        <collectionName>NCAR Technical Notes</collectionName>
+    </row>
+    <row>
+        <collectionKey>conference</collectionKey>
+        <collectionName>Posters &amp; Presentations</collectionName>
+    </row>
+    <row>
+        <collectionKey>articles</collectionKey>
+        <collectionName>Journal Articles</collectionName>
+   </row>
+    <row>
+        <collectionKey>manuals</collectionKey>
+        <collectionName>User Guides &amp; Manuscripts</collectionName>
+   </row>
+    <row>
+        <collectionKey>dataviz</collectionKey>
+        <collectionName>Data Visualizations</collectionName>
+   </row>
+    <row>
+        <collectionKey>proceedings</collectionKey>
+        <collectionName>Published Proceedings</collectionName>
+   </row>
+    <row>
+        <collectionKey>books</collectionKey>
+        <collectionName>Book &amp; Bk Chapters</collectionName>
+   </row>
+    <row>
+        <collectionKey>usclivar</collectionKey>
+        <collectionName>US CLIVAR Reports</collectionName>
+   </row>
+    <row>
+        <collectionKey>gtpr</collectionKey>
+        <collectionName>Geophysical Turbulence Records</collectionName>
+   </row>
+    <row>
+        <collectionKey>ucarbd</collectionKey>
+        <collectionName>UCAR Members Meeting Records</collectionName>
+   </row>
+    <row>
+        <collectionKey>unav</collectionKey>
+        <collectionName>UCAR/NCAR AV</collectionName>
+   </row>
+    <row>
+        <collectionKey>raf</collectionKey>
+        <collectionName>Research Aviation Facility</collectionName>
+   </row>
+    <row>
+        <collectionKey>wcias</collectionKey>
+        <collectionName>Weather/Climate Assessment Records</collectionName>
+   </row>
+    <row>
+        <collectionKey>guides</collectionKey>
+        <collectionName>Guides to Archival Collections</collectionName>
+   </row>
+    <row>
+        <collectionKey>reports</collectionKey>
+        <collectionName>Reports &amp; Rpt Chapters</collectionName>
+   </row>
+    <row>
+        <collectionKey>manuscript</collectionKey>
+        <collectionName>NCAR Manuscripts</collectionName>
+   </row>
+    <row>
+        <collectionKey>barbados</collectionKey>
+        <collectionName>1968 Barbados Experiment</collectionName>
+   </row>
+    <row>
+        <collectionKey>ral</collectionKey>
+        <collectionName>Research Applications Lab</collectionName>
+   </row>
+
+</lookup>
