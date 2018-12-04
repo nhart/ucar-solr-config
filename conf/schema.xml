@@ -486,6 +486,7 @@
    <dynamicField name="*_mdt" type="date"    indexed="true"  stored="true" multiValued="true"/>
    <dynamicField name="*_et" type="edgedText" indexed="true" stored="true" multiValued="true"/>
    <dynamicField name="*_mlt" type="mappedLowerText" indexed="true" stored="true" multiValued='false'/>
+   <dynamicField name="*_ats" type="alphaOnlyTitleSort" indexed="true"  stored="false" multiValued="false"/>
 
    <!-- islandora_solution_pack_oralhistories setup. This may collide with other dynamic fields. Use at own risk. -->
    <!-- <dynamicField name="or_*" type="text" indexed="true" stored="true" multiValued="true"/> -->
@@ -544,7 +545,7 @@
    <field name="mods_originInfo_dateOther_ms" type="string" multiValued="true" indexed="true" stored="true"/>
    <field name="iso639" type="iso639Code" indexed="true" multiValued="true" />
    <field name="fgs_label_s" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
-   <field name="fgs_label_t" type="alphaOnlyTitleSort" indexed="true"  stored="false" multiValued="false"/>
+   <field name="fgs_label_ats" type="alphaOnlyTitleSort" indexed="true"  stored="false" multiValued="false"/>
    <field name="mods_titleInfo_title_nospec" type="nospecchar_text" indexed="true"  stored="true" multiValued="false"/>
 
    <dynamicField name="*" type="text_fgs"  indexed="true"  stored="true" multiValued="true"/>
