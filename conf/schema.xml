@@ -592,7 +592,6 @@
   <copyField source="mods_originInfo_encoding_w3cdtf_keyDate_yes_dateCreated_dt" dest="keyDateYMD" maxChars="10"/>
   <copyField source="mods_originInfo_encoding_w3cdtf_keyDate_yes_dateIssued_dt" dest="keyDateYMD" maxChars="10"/>
   <copyField source="fgs_label_s" dest="mods_titleInfo_title_nospec"/>
-  <copyField source="fgs_label_s" dest="fgs_label_t"/>
   <copyField source="mods_language_languageTerm_code_ms" dest="iso639"/>
   <copyField source="mods_originInfo_dateOther_dt" dest="mods_originInfo_dateOther_ms" />
   <copyField source="dsmd.OBJ.Content-Type" dest="dsmd.OBJ.Content-Type_ms" />
