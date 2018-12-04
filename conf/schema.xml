@@ -486,6 +486,7 @@
    <dynamicField name="*_mdt" type="date"    indexed="true"  stored="true" multiValued="true"/>
    <dynamicField name="*_et" type="edgedText" indexed="true" stored="true" multiValued="true"/>
    <dynamicField name="*_mlt" type="mappedLowerText" indexed="true" stored="true" multiValued='false'/>
+   <dynamicField name="*_ats" type="alphaOnlyTitleSort" indexed="true"  stored="false" multiValued="false"/>
 
    <!-- islandora_solution_pack_oralhistories setup. This may collide with other dynamic fields. Use at own risk. -->
    <!-- <dynamicField name="or_*" type="text" indexed="true" stored="true" multiValued="true"/> -->
@@ -544,7 +545,7 @@
    <field name="mods_originInfo_dateOther_ms" type="string" multiValued="true" indexed="true" stored="true"/>
    <field name="iso639" type="iso639Code" indexed="true" multiValued="true" />
    <field name="fgs_label_s" type="string" indexed="true" stored="true" required="true" multiValued="false"/>
-   <field name="fgs_label_t" type="alphaOnlyTitleSort" indexed="true"  stored="false" multiValued="false"/>
+   <field name="fgs_label_ats" type="alphaOnlyTitleSort" indexed="true"  stored="false" multiValued="false"/>
    <field name="mods_titleInfo_title_nospec" type="nospecchar_text" indexed="true"  stored="true" multiValued="false"/>
 
    <dynamicField name="*" type="text_fgs"  indexed="true"  stored="true" multiValued="true"/>
@@ -591,7 +592,6 @@
   <copyField source="mods_originInfo_encoding_w3cdtf_keyDate_yes_dateCreated_dt" dest="keyDateYMD" maxChars="10"/>
   <copyField source="mods_originInfo_encoding_w3cdtf_keyDate_yes_dateIssued_dt" dest="keyDateYMD" maxChars="10"/>
   <copyField source="fgs_label_s" dest="mods_titleInfo_title_nospec"/>
-  <copyField source="fgs_label_s" dest="fgs_label_t"/>
   <copyField source="mods_language_languageTerm_code_ms" dest="iso639"/>
   <copyField source="mods_originInfo_dateOther_dt" dest="mods_originInfo_dateOther_ms" />
   <copyField source="dsmd.OBJ.Content-Type" dest="dsmd.OBJ.Content-Type_ms" />
