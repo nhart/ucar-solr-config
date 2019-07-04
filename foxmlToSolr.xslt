@@ -253,6 +253,9 @@
             <xsl:apply-templates select="foxml:datastreamVersion[last()]">
               <xsl:with-param name="content" select="document(concat($PROT, '://', encoder:encode($FEDORAUSER), ':', encoder:encode($FEDORAPASS), '@', $HOST, ':', $PORT, '/fedora/objects/', $PID, '/datastreams/', @ID, '/content'))"/>
             </xsl:apply-templates>
+            <xsl:if test="@ID='MODS'">
+              <xsl:value-of disable-output-escaping="yes" select="exts:getDatastreamFromTika($PID, $REPOSITORYNAME, @ID, 'field', 'mods_full_xml_escaped', concat('dsmd_', @ID, '.'), '', $FEDORASOAP, $FEDORAUSER, $FEDORAPASS, $TRUSTSTOREPATH, $TRUSTSTOREPASS)"/>
+            </xsl:if>
           </xsl:when>
           <!-- JSON to document objects -->
           <xsl:when test="@CONTROL_GROUP='M' and foxml:datastreamVersion[last() and @MIMETYPE='application/json']">
