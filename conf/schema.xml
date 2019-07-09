@@ -444,7 +444,7 @@
        fields or fields that need an index-time boost need norms.
    -->
    <field name="PID" type="string" indexed="true" stored="true" required="true"/>
-   <field name="mods_full_xml" type="string"  indexed="false" stored="true"/>
+   <field name="mods_full_xml" type="text"  indexed="false" stored="true" multiValued="false"/>
 
    <field name="PID_kw" type="text_keyword" indexed="true" stored="true" multiValued="false"/>
 

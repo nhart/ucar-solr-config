@@ -3,19 +3,16 @@
 <xsl:stylesheet version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <!-- have the template match whatever datastream needs this type of processing -->
-  <!--
-  <xsl:template match="*" name="index_text_nodes_as_one_text_field">
-        <xsl:param name="content"/>
-    <xsl:param name="prefix">full_XML_</xsl:param>
-    <xsl:param name="suffix">_t</xsl:param>
+  <xsl:template name="index_text_nodes_as_one_text_field">
+    <xsl:param name="content"/>
+    <xsl:param name="field_name">mods_full_xml</xsl:param>
 
     <field>
       <xsl:attribute name="name">
-        <xsl:value-of select="concat($prefix, ../@ID, $suffix)"/>
+        <xsl:value-of select="$field_name" />
       </xsl:attribute>
-      <xsl:copy-of select="$content"/>
+      <xsl:value-of select="normalize-space($content)"/>
     </field>
     
   </xsl:template>
-  -->
 </xsl:stylesheet>
