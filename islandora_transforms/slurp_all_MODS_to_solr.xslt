@@ -279,22 +279,31 @@
         <xsl:call-template name="mods_produce_name"/>
       </field>
 
+      <xsl:variable name="field_name">
+        <xsl:value-of select="concat('ucar_', $this_prefix, translate(@usage, $uppercase, $lowercase), '_', translate(mods:role/mods:roleTerm[@type='text'], $uppercase, $lowercase), '_sort')"/>
+      </xsl:variable>
+
       <field>
-        <xsl:variable name="roleType">
-          <xsl:value-of select="mods:role/mods:roleTerm[@type='text']"/>
-        </xsl:variable>
         <xsl:attribute name="name">
-          <xsl:value-of
-            select="concat($this_prefix, translate(@usage, $uppercase, $lowercase), '_', translate($roleType, $uppercase, $lowercase), '_sort')"
-            />
+          <xsl:choose>
+            <xsl:when test="java:add($single_valued_hashset, string($field_name))">
+              <xsl:value-of select="concat($field_name, '_s')"/>
+            </xsl:when>
+            <xsl:otherwise>
+              <xsl:value-of select="concat($field_name, '_ms')"/>
+            </xsl:otherwise>
+          </xsl:choose>
         </xsl:attribute>
+
         <xsl:value-of select="mods:namePart[@type='family']"/>
         <xsl:if test="mods:namePart[@type='given']">
           <xsl:text>, </xsl:text>
         </xsl:if>
         <xsl:for-each select="mods:namePart[@type='given']">
           <xsl:value-of select="."/>
-          <xsl:text> </xsl:text>
+          <xsl:if test="position()!=last()">
+            <xsl:text> </xsl:text>
+          </xsl:if>
         </xsl:for-each>
       </field>
     </xsl:if>
