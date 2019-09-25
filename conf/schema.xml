@@ -582,8 +582,8 @@
   <copyField source="PID" dest="PID_kw"/>
 
   <!-- copyField commands copied over from UCAR's original schema. -->
-  <copyField source="mods_name_personal_primary_author_sort" dest="mods_usage_primary_sort"/>
-  <copyField source="mods_name_corporate_primary_author_sort" dest="mods_usage_primary_sort"/>
+  <copyField source="ucar_mods_name_personal_primary_author_sort_s" dest="mods_usage_primary_sort_s"/>
+  <copyField source="ucar_mods_name_corporate_primary_author_sort_s" dest="mods_usage_primary_sort_s"/>
   <copyField source="mods_originInfo_encoding_w3cdtf_keyDate_yes_dateCreated_dt" dest="keyDate"/>
   <copyField source="mods_originInfo_encoding_w3cdtf_keyDate_yes_dateIssued_dt" dest="keyDate"/>
   <copyField source="mods_name_personal_author_affiliation_s" dest="fullAffil"/>
