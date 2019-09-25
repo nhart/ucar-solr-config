@@ -195,5 +195,16 @@
         <collectionKey>ral</collectionKey>
         <collectionName>Research Applications Lab</collectionName>
    </row>
-
+   <row>
+     <collectionKey>reference</collectionKey>
+     <collectionName>Reference Documents</collectionName>
+   </row>
+   <row>
+     <collectionKey>gcip</collectionKey>
+     <collectionName>Global Change Instruction Program</collectionName>
+   </row>
+   <row>
+     <collectionKey>globe</collectionKey>
+     <collectionName>Globe Program</collectionName>
+   </row>
 </lookup>
