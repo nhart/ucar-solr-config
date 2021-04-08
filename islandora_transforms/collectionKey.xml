@@ -205,6 +205,18 @@
   </row>
   <row>
     <collectionKey>globe</collectionKey>
-    <collectionName>Globe Program</collectionName>
+    <collectionName>The GLOBE Program</collectionName>
+  </row>
+  <row>
+    <collectionKey>cgd</collectionKey>
+    <collectionName>Climate and Global Dynamics Records</collectionName>
+  </row>
+  <row>
+    <collectionKey>ewss</collectionKey>
+	<collectionName>SOARS Prot&amp;eacute;g&amp;eacute; Abstracts</collectionName>
+  </row>
+  <row>
+    <collectionKey>infoav</collectionKey>
+	<collectionName>UCAR Info Office Films and Recordings</collectionName>
   </row>
 </lookup>
