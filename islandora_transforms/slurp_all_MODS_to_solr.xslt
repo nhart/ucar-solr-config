@@ -187,6 +187,12 @@
         </xsl:attribute>
         <xsl:value-of select="mods:namePart"/>
       </field>
+
+    <field><!-- citation uses author_Display_with_Affiliation -->
+      <xsl:attribute name="name">author_Display_with_Affiliation</xsl:attribute>
+      <xsl:value-of select="mods:namePart"/>
+    </field>
+
     </xsl:if>
     <xsl:call-template name="mods_role_term">
       <xsl:with-param name="prefix" select="$prefix"/>
