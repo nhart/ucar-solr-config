@@ -535,10 +535,6 @@
    <field name="mods_subject_hierarchicalGeographic_country_ms" type="string" multiValued="true" indexed="true" stored="true"/>
    <field name="mods_subject_hierarchicalGeographic_continent_ms" type="string" multiValued="true" indexed="true" stored="true"/>
    <field name="mods_originInfo_dateIssued_dt" type="date" indexed="true"  stored="true" multiValued="true"/>
-   <field name="mods_originInfo_encoding_w3cdtf_keyDate_yes_dateCreated_dt" type="date" indexed="true"  stored="true" multiValued="false"/>
-   <field name="mods_originInfo_encoding_w3cdtf_keyDate_yes_dateIssued_dt" type="date" indexed="true"  stored="true" multiValued="false"/>
-   <field name="mods_originInfo_encoding_w3cdtf_keyDate_yes_qualifier_approximate_dateCreated_dt" type="date" indexed="true"  stored="true" multiValued="false"/>
-   <field name="mods_originInfo_encoding_w3cdtf_keyDate_yes_qualifier_approximate_dateIssued_dt" type="date" indexed="true"  stored="true" multiValued="false"/>
    <field name="keyDate" type="date" indexed="true"  stored="true" multiValued="false"/>
    <field name="keyDateYear" type="text_en_splitting" indexed="true"  stored="true" multiValued="false"/>
    <field name="keyDateYMD" type="text_en_splitting" indexed="true"  stored="true" multiValued="false"/>
@@ -586,17 +582,10 @@
   <!-- copyField commands copied over from UCAR's original schema. -->
   <copyField source="ucar_mods_name_personal_primary_author_sort_s" dest="mods_usage_primary_sort_s"/>
   <copyField source="ucar_mods_name_corporate_primary_author_sort_s" dest="mods_usage_primary_sort_s"/>
-  <copyField source="mods_originInfo_encoding_w3cdtf_keyDate_yes_dateCreated_dt" dest="keyDate"/>
-  <copyField source="mods_originInfo_encoding_w3cdtf_keyDate_yes_dateIssued_dt" dest="keyDate"/>
-  <copyField source="mods_originInfo_encoding_w3cdtf_keyDate_yes_qualifier_approximate_dateCreated_dt" dest="keyDate"/>
   <copyField source="mods_name_personal_author_affiliation_s" dest="fullAffil"/>
   <copyField source="mods_name_personal_author_affiliation_ms" dest="fullAffil"/>
-  <copyField source="mods_originInfo_encoding_w3cdtf_keyDate_yes_dateCreated_dt" dest="keyDateYear" maxChars="4"/>
-  <copyField source="mods_originInfo_encoding_w3cdtf_keyDate_yes_dateIssued_dt" dest="keyDateYear" maxChars="4"/>
-  <copyField source="mods_originInfo_encoding_w3cdtf_keyDate_yes_dateCreated_dt" dest="keyDateYMD" maxChars="10"/>
-  <copyField source="mods_originInfo_encoding_w3cdtf_keyDate_yes_dateIssued_dt" dest="keyDateYMD" maxChars="10"/>
-  <copyField source="mods_originInfo_encoding_w3cdtf_keyDate_yes_qualifier_approximate_dateCreated_dt" dest="keyDateYear" maxChars="4"/>
-  <copyField source="mods_originInfo_encoding_w3cdtf_keyDate_yes_qualifier_approximate_dateCreated_dt" dest="keyDateYMD" maxChars="10"/>
+  <copyField source="keyDate" dest="keyDateYear" maxChars="4"/>
+  <copyField source="keyDate" dest="keyDateYMD" maxChars="10"/>
   <copyField source="fgs_label_s" dest="mods_titleInfo_title_nospec"/>
   <copyField source="mods_language_languageTerm_code_ms" dest="iso639"/>
   <copyField source="mods_originInfo_dateOther_dt" dest="mods_originInfo_dateOther_ms" />
