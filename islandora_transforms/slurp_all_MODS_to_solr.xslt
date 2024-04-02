@@ -65,6 +65,19 @@
     <!-- Prevent multiple generating multiple instances of single-valued fields
          by tracking things in a HashSet -->
     <xsl:variable name="field_name" select="normalize-space(concat($this_prefix, local-name()))"/>
+
+    <xsl:if test="$field_name = 'mods_originInfo_encoding_w3cdtf_keyDate_yes_dateCreated' or $field_name = 'mods_originInfo_encoding_w3cdtf_keyDate_yes_dateIssued' or $field_name = 'mods_originInfo_encoding_w3cdtf_keyDate_yes_qualifier_approximate_dateCreated' or $field_name = 'mods_originInfo_encoding_w3cdtf_keyDate_yes_qualifier_approximate_dateIssued'">
+      <xsl:variable name="key_date_field_name">keyDate</xsl:variable>
+      <xsl:if test="java:add($single_valued_hashset, $key_date_field_name)">
+        <field>
+          <xsl:attribute name="name">
+            <xsl:value-of select="$key_date_field_name"/>
+          </xsl:attribute>
+          <xsl:value-of select="$textValue"/>
+        </field>
+      </xsl:if>
+    </xsl:if>
+
     <!-- The method java.util.HashSet.add will return false when the value is
          already in the set. -->
     <xsl:if test="java:add($single_valued_hashset, $field_name)">
